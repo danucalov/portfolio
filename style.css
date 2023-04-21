@@ -1,0 +1,147 @@
+body {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+	margin: 0;
+	padding: 0;
+  background-color: #e0e0e0;
+}
+
+header {
+	background-color: #e0e0e0;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 250px;
+	overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 60px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav ul {
+	list-style: none;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+nav li {
+	margin-right: 10px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  padding: 5px;
+  
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	padding: 50;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* reference: https://www.w3schools.com/cssref/pr_grid-template-columns.php */
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0px 450px 80px;
+  align-items: center;
+  
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin: 0px 450px 80px;
+  align-items: center;
+}
+
+.grid_item {
+  padding: 10px;
+  text-align: center;
+  }
+.grid_item img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.grid_item2 {
+  padding: 30px;
+  text-align: center;
+  }
+.grid_item2 img {
+  max-width: 1200px;
+  border: 10px #000000;
+}
+
+footer {
+	background-color: #e0e0e0;
+	color: #000000;
+	padding: 20px;
+	text-align: center;
+}
+
+/* <!-- reference: https://www.w3schools.com/tags/att_input_type_email.asp -->  */
+
+.contact {
+  width: 300px;
+  margin: auto;
+  padding: 40px;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin:0 0 20px;
+}
+
+.contact form button {
+  background-color: #ffffff;
+  padding: 10px;
+
+}
+
+.contact form button:hover {
+  background-color: #494949;
+}
+
+.imgabout {
+  margin: 0px 810px 50px;
+  width: 300px;
+}
+
+p {
+margin: 0px 750px;
+}
+
+@media (max-width: 768px) {
+  .grid1 {
+    grid-template-columns: repeat(1, 100%);
+  }
+  
+  .grid_item1 img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: repeat(1, 100%);
+  }
+  
+  .grid_item2 img {
+    max-width: 100%;
+  }
+}
